@@ -11,7 +11,7 @@ openai.api_key = st.secrets.OpenAI.API_KEY
 
 st.title("ChatGPT-like clone")
 
-openai.api_key = api_key
+# openai.api_key = api_key ←ここを消せていなかった…
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
